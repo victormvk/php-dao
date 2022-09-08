@@ -1,5 +1,7 @@
 <?php 
 
+// Fazendo a conexão automática com o banco e preparando para executar os comandos
+
 class Sql extends PDO {
 
 	private $conn;
