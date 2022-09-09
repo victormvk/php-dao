@@ -30,11 +30,16 @@ require_once("config.php");
 //echo $aluno;
 
 //Altera um usuário na tabela
+//$usuario = new Usuario();
+//$usuario->loadById(7); //Carrega o usuario do ID 7
+//$usuario->update("professor", "qwerty");
+//echo $usuario;
+
+//Deleta uma linha
 $usuario = new Usuario();
-
-$usuario->loadById(7); //Carrega o usuario do ID 7
-
-$usuario->update("professor", "qwerty");
+$usuario->loadById(14);
+$usuario->delete();
 
 echo $usuario;
+
  ?>
