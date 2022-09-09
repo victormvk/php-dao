@@ -20,10 +20,21 @@ require_once("config.php");
 //echo json_encode($search);
 
 //Carrega um usuário usuando o login e a senha
+//$usuario = new Usuario();
+//$usuario->login("root", "77777");
+//echo $usuario;
 
+//Insere um usuário na tabela
+//$aluno = new Usuario("aluno", "@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+//Altera um usuário na tabela
 $usuario = new Usuario();
-$usuario->login("root", "77777");
+
+$usuario->loadById(7); //Carrega o usuario do ID 7
+
+$usuario->update("professor", "qwerty");
 
 echo $usuario;
-
  ?>
